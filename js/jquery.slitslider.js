@@ -78,7 +78,7 @@
 		// maximum possible scale
 		maxScale : 2,
 		// slideshow on / off
-		autoplay : true,
+		autoplay : false,
 		// keyboard navigation
 		keyboard : true,
 		// time between transitions
@@ -408,6 +408,22 @@
 			};
 			
 			this.$el.css( cssStyle ).find( 'div.sl-content-wrapper' ).css( cssStyle );
+			
+			$('#animate_cafe').css({
+				width: cssStyle.width * 27 / 100 + "px",
+				bottom: cssStyle.height * 7 / 100 + "px",
+				left: cssStyle.width * 11 / 100 + "px",
+			});
+			$('#animate_burger').css({
+				width: cssStyle.width * 22 / 100 + "px",
+				bottom: cssStyle.height * 7.8 / 100 + "px",
+				left: cssStyle.width * 8.3 / 100 + "px",
+			});
+			/*.animate({
+				opacity: 1
+			}, 4000, "linear", function() {
+				console.log("asdi");
+			}); */
 		
 		},
 		_loadEvents : function() {
