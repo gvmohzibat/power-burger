@@ -4,7 +4,8 @@ body {
   overflow-x: hidden; }
 
 body {
-  position: relative; }
+  position: relative;
+  padding-top: 70px; }
 
 footer {
   position: absolute;
@@ -16,13 +17,31 @@ footer {
   min-height: 60px;
   color: #fff; }
 
-#navbar .nav-link {
-  color: #333; }
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 70px;
+  background: #222;
+  border-bottom: 2px solid #ff9f00;
+  color: #ff9f00;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); }
+  #navbar #logo {
+    color: #fff; }
+  #navbar .nav-link {
+    color: #fff; }
+    #navbar .nav-link:hover {
+      color: #ff9f00; }
+    #navbar .nav-link img {
+      margin-left: 7px; }
 
 div#side-menu {
   position: fixed;
   right: 0;
-  top: 70px;
+  top: 80px;
+  z-index: 999;
   transition: all 0.4s; }
   div#side-menu ul {
     padding: 0;
@@ -38,6 +57,7 @@ div#side-menu {
       right: -40px;
       line-height: 30px;
       transition: all 0.4s;
+      box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 0, 0, 0.2);
       cursor: pointer; }
       div#side-menu ul li img,
       div#side-menu ul li span {
@@ -48,6 +68,16 @@ div#side-menu {
         width: 30px;
         height: 30px; }
       div#side-menu ul li:hover {
-        right: 0; }
+        right: 0;
+        background: #ff9f00;
+        /* color: #fff; */
+        border: 2px solid #ffe06b;
+        border-right: none; }
+
+#logo {
+  direction: ltr;
+  margin-left: 20px; }
+  #logo img {
+    margin-right: 11px; }
 
 /*# sourceMappingURL=styles.css.map */
