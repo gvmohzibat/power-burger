@@ -132,10 +132,10 @@
 		},
 		// gets the current container width & height
 		_getSize : function() {
-
+			var $awidth = this.$elWrapper.outerWidth( true );
 			this.size = {
-				width : this.$elWrapper.outerWidth( true ),
-				height : this.$elWrapper.outerHeight( true )
+				width : $awidth,
+				height : $awidth * 1001 / 2480
 			};
 
 		},
@@ -408,6 +408,8 @@
 			};
 			
 			this.$el.css( cssStyle ).find( 'div.sl-content-wrapper' ).css( cssStyle );
+			this.$elWrapper.css( cssStyle );
+			console.log(cssStyle);
 			
 			$('#animate_cafe').css({
 				width: cssStyle.width * 27 / 100 + "px",
@@ -419,12 +421,31 @@
 				bottom: cssStyle.height * 7.8 / 100 + "px",
 				left: cssStyle.width * 8.3 / 100 + "px",
 			});
-			/*.animate({
-				opacity: 1
-			}, 4000, "linear", function() {
-				console.log("asdi");
-			}); */
-		
+			$('#animate_battery4').css({
+				width: cssStyle.width * 10.3 / 100 + "px",
+				bottom: cssStyle.height * 34.5 / 100 + "px",
+				left: cssStyle.width * 24 / 100 + "px",
+			});
+			$('#animate_line14').css({
+				width: cssStyle.width * 5.2 / 100 + "px",
+				bottom: cssStyle.height * 40.6 / 100 + "px",
+				left: cssStyle.width * 26.6 / 100 + "px",
+			});
+			$('#animate_line24').css({
+				width: cssStyle.width * 5.2 / 100 + "px",
+				bottom: cssStyle.height * 48.6 / 100 + "px",
+				left: cssStyle.width * 26.6 / 100 + "px",
+			});
+			$('#animate_cable4').css({
+				width: cssStyle.width * 22.7 / 100 + "px",
+				bottom: cssStyle.height * 32.1 / 100 + "px",
+				left: cssStyle.width * 34.3 / 100 + "px",
+			});
+			$('#animate_burger4').css({
+				width: cssStyle.width * 19.8 / 100 + "px",
+				bottom: cssStyle.height * 33.4 / 100 + "px",
+				left: cssStyle.width * 56.5 / 100 + "px",
+			});
 		},
 		_loadEvents : function() {
 			
