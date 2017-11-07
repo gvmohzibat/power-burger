@@ -5,14 +5,11 @@ body {
 }
 body {
   position: relative;
-  padding-top: 70px;
+	padding-top: 70px;
+	text-align: right;
 }
 footer {
-  position: absolute;
-  bottom: 0px;
   width: 100%;
-  right: 0;
-  left: 0;
   background: #333;
   min-height: 60px;
   color: #fff;
@@ -23,25 +20,46 @@ footer {
   left: 0;
   right: 0;
   z-index: 999;
-  height: 70px;
+  min-height: 70px;
   background: #222;
-  border-bottom: 2px solid #ff9f00;
-  color: #ff9f00;
+  border-bottom: 2px solid #e5e607;
+  color: #e5e607;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   .nav-link {
-    color: #fff;
+		color: #fff;
+		background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+		padding-right: 38px;
+		margin-left: 13px;
     &:hover {
-      color: #ff9f00;
+      color: #e5e607;
     }
-    img {
-      margin-left: 7px;
+  }
+  #home-nav {
+    background-image: url(images/home.png);
+    &:hover {
+      background-image: url(images/homey.png);
+    }
+  }
+  #contact-nav {
+    background-image: url(images/contact.png);
+    &:hover {
+      background-image: url(images/contacty.png);
+    }
+  }
+  #about-nav {
+    background-image: url(images/about.png);
+    &:hover {
+      background-image: url(images/abouty.png);
     }
   }
 }
 #side-menu {
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 130px;
   z-index: 999;
   transition: all 0.4s;
   ul {
@@ -96,21 +114,11 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     animation-name: animateLogo, animateLogoShadow;
-    animation-duration: 4s, 4s;
+    animation-duration: 4.5s, 4.5s;
     animation-iteration-count: infinite;
     background-position-x: center;
     border-radius: 100px;
   }
-  /* &:before {
-    position: absolute;
-    content: '';
-    top: 23px;
-    left: 17px;
-    background-repeat: no-repeat;
-    animation-name: animateLogoShadow;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  } */
 }
 .animate-image {
   position: absolute;
@@ -120,16 +128,28 @@ footer {
   animation-duration: 2s;
 }
 .animate-image-delay2 {
-	animation-delay: 0.2s;
+	animation-name: animateImageSliderdelay2;
+  animation-duration: 3s;
 }
 .animate-image-delay3 {
-	animation-delay: 0.4s;
+	animation-name: animateImageSliderdelay3;
+  animation-duration: 3.2s;
 }
 .animate-image-delay4 {
-	animation-delay: 0.6s;
+	animation-name: animateImageSliderdelay4;
+  animation-duration: 4s;
 }
 .animate-image-delay5 {
-	animation-delay: 0.8s;
+	animation-name: animateImageSliderdelay5;
+  animation-duration: 4.5s;
+}
+.animate-image-delay6 {
+	animation-name: animateImageSliderdelay6;
+  animation-duration: 5s;
+}
+.animate-image-delay7 {
+	animation-name: animateImageSliderdelay7;
+  animation-duration: 5.5s;
 }
 
 @keyframes animateImageSlider {
@@ -146,30 +166,115 @@ footer {
     transform: scale(1);
   }
 }
-@keyframes animateLogo {
+@keyframes animateImageSliderdelay2 {
   0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  45% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
     transform: scale(1);
   }
-  20% {
-    transform: scale(0.8);
-    background-image: url(images/logo1.png);
+}
+@keyframes animateImageSliderdelay3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
   }
+  50% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animateImageSliderdelay4 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  58% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animateImageSliderdelay5 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  65% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animateImageSliderdelay6 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animateImageSliderdelay7 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animateLogo {
+  0% {
+		transform: scale(1);
+		background-image: url(images/logo.png);
+  }
+  20% {
+		transform: scale(0.7);
+		background-image: url(images/logo.png);
+	}
+	22% {
+    background-image: url(images/logo1.png);		
+	}
   30% {
     transform: scale(1);
     background-image: url(images/logo1.png);
   }
-  40% {
-  }
-  70% {
-    transform: scale(1);
-    background-image: url(images/logo1.png);
-  }
+  55%,
   100% {
-    transform: scale(1);
+		transform: scale(1);
+		background-image: url(images/logo.png);
   }
 }
 @keyframes animateLogoShadow {
-  0%, 20% {
+  0%,
+  20% {
     box-shadow: 0 3px 5px 5px #232322, 0 4px 0px 0px rgba(252, 254, 1, 1);
   }
   40% {

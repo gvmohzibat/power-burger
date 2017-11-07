@@ -409,7 +409,7 @@
 			
 			this.$el.css( cssStyle ).find( 'div.sl-content-wrapper' ).css( cssStyle );
 			this.$elWrapper.css( cssStyle );
-			console.log(cssStyle);
+			// console.log(cssStyle);
 			
 			$('#animate_cafe').css({
 				width: cssStyle.width * 27 / 100 + "px",
@@ -428,12 +428,22 @@
 			});
 			$('#animate_line14').css({
 				width: cssStyle.width * 5.2 / 100 + "px",
-				bottom: cssStyle.height * 40.6 / 100 + "px",
+				bottom: cssStyle.height * 41 / 100 + "px",
 				left: cssStyle.width * 26.6 / 100 + "px",
 			});
 			$('#animate_line24').css({
 				width: cssStyle.width * 5.2 / 100 + "px",
-				bottom: cssStyle.height * 48.6 / 100 + "px",
+				bottom: cssStyle.height * 49 / 100 + "px",
+				left: cssStyle.width * 26.6 / 100 + "px",
+			});
+			$('#animate_line34').css({
+				width: cssStyle.width * 5.2 / 100 + "px",
+				bottom: cssStyle.height * 57 / 100 + "px",
+				left: cssStyle.width * 26.6 / 100 + "px",
+			});
+			$('#animate_line44').css({
+				width: cssStyle.width * 5.2 / 100 + "px",
+				bottom: cssStyle.height * 65 / 100 + "px",
 				left: cssStyle.width * 26.6 / 100 + "px",
 			});
 			$('#animate_cable4').css({
@@ -445,6 +455,9 @@
 				width: cssStyle.width * 19.8 / 100 + "px",
 				bottom: cssStyle.height * 33.4 / 100 + "px",
 				left: cssStyle.width * 56.5 / 100 + "px",
+			});
+			$('#main-container').css({
+				minHeight: $(window).outerHeight() - cssStyle.height - $('#navbar').outerHeight() - $('footer').outerHeight()
 			});
 		},
 		_loadEvents : function() {
