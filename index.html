@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link href='http://www.fontonline.ir/css/BHoma.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles.css">
 	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 	<noscript>
@@ -21,122 +22,162 @@
 </head>
 
 <body>
-	<!-- navbar -->
-	<nav id="navbar" class="navbar navbar-dark navbar-expand-lg" style="direction: ltr;">
-		<a id="logo" class="navbar-brand" href="/">
-			<div id="logo-power"></div> Power burger
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-		  aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction: rtl;">
-			<ul class="nav navbar-nav justify-content-end">
-				<li class="nav-item">
-					<a id="home-nav" class="nav-link active" href="#">
-						صفحه اصلی
-					</a>
+	<div id="main">
+		<!-- navbar -->
+		<nav id="navbar" class="navbar navbar-dark navbar-expand-lg" style="direction: ltr;">
+			<a id="logo" class="navbar-brand" href="/">
+				<div id="logo-power"></div> Power burger
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			  aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction: rtl;">
+				<ul class="nav navbar-nav justify-content-end">
+					<li class="nav-item">
+						<a id="home-nav" class="nav-link active" href="#">
+							صفحه اصلی
+						</a>
+					</li>
+					<li class="nav-item">
+						<a id="contact-nav" class="nav-link" href="#">
+							تماس با ما
+						</a>
+					</li>
+					<li class="nav-item">
+						<a id="about-nav" class="nav-link" href="#">
+							درباره ما
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+		</nav>
+	
+		<!-- side menu -->
+		<div id="side-menu">
+			<ul>
+				<li class="side-menu-item">
+					<img src="images/side-burger.png" alt="برگر" class="icon-img">
+					<span class="side-menu-item-label">برگر</span>
 				</li>
-				<li class="nav-item">
-					<a id="contact-nav" class="nav-link" href="#">
-						تماس با ما
-					</a>
-				</li>
-				<li class="nav-item">
-					<a id="about-nav" class="nav-link" href="#">
-						درباره ما
-					</a>
+				<li class="side-menu-item">
+					<img src="images/side-cafe.png" alt="کافه" class="icon-img">
+					<span class="side-menu-item-label">کافه</span>
 				</li>
 			</ul>
 		</div>
-
-	</nav>
-
-	<!-- side menu -->
-	<div id="side-menu">
-		<ul>
-			<li class="side-menu-item">
-				<img src="images/side-burger.png" alt="برگر" class="icon-img">
-				<span class="side-menu-item-label">برگر</span>
-			</li>
-			<li class="side-menu-item">
-				<img src="images/side-cafe.png" alt="کافه" class="icon-img">
-				<span class="side-menu-item-label">کافه</span>
-			</li>
-		</ul>
-	</div>
-
-	<!-- slider -->
-	<div id="the-slider-container">
-		<div class="the-slider demo-2">
-
-			<div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2"
-					  data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<img id="animate_cafe" class="animate-image" src="images/1cafe.png" alt="">
+	
+		<!-- slider -->
+		<div id="the-slider-container">
+			<div class="the-slider demo-2">
+	
+				<div id="slider" class="sl-slider-wrapper">
+	
+					<div class="sl-slider">
+	
+						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2"
+						  data-slice2-scale="2">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-1"></div>
+								<img id="animate_cafe" class="animate-image" src="images/1cafe.png" alt="">
+							</div>
+						</div>
+	
+						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5"
+						  data-slice2-scale="1.5">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-2"></div>
+							</div>
+						</div>
+	
+						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2"
+						  data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-3"></div>
+								<img id="animate_burger" class="animate-image" src="images/2burger.png" alt="">
+							</div>
+						</div>
+	
+						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2"
+						  data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-4"></div>
+								<img id="animate_battery4" class="animate-image" src="images/4battery.png" alt="">
+								<img id="animate_line14" class="animate-image animate-image-delay4" src="images/4line.png" alt="">
+								<img id="animate_line24" class="animate-image animate-image-delay5" src="images/4line.png" alt="">
+								<img id="animate_line34" class="animate-image animate-image-delay6" src="images/4line.png" alt="">
+								<img id="animate_line44" class="animate-image animate-image-delay7" src="images/4line.png" alt="">
+								<img id="animate_cable4" class="animate-image animate-image-delay2" src="images/4cable.png" alt="">
+								<img id="animate_burger4" class="animate-image animate-image-delay3" src="images/4burger.png" alt="">
+							</div>
 						</div>
 					</div>
-
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5"
-					  data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-						</div>
-					</div>
-
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2"
-					  data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-							<img id="animate_burger" class="animate-image" src="images/2burger.png" alt="">
-						</div>
-					</div>
-
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2"
-					  data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-4"></div>
-							<img id="animate_battery4" class="animate-image" src="images/4battery.png" alt="">
-							<img id="animate_line14" class="animate-image animate-image-delay4" src="images/4line.png" alt="">
-							<img id="animate_line24" class="animate-image animate-image-delay5" src="images/4line.png" alt="">
-							<img id="animate_line34" class="animate-image animate-image-delay6" src="images/4line.png" alt="">
-							<img id="animate_line44" class="animate-image animate-image-delay7" src="images/4line.png" alt="">
-							<img id="animate_cable4" class="animate-image animate-image-delay2" src="images/4cable.png" alt="">
-							<img id="animate_burger4" class="animate-image animate-image-delay3" src="images/4burger.png" alt="">
-						</div>
-					</div>
+					<!-- /sl-slider -->
+	
+					<nav id="nav-dots" class="nav-dots">
+						<span class="nav-dot-current"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</nav>
+	
 				</div>
-				<!-- /sl-slider -->
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
-
+				<!-- /slider-wrapper -->
+	
 			</div>
-			<!-- /slider-wrapper -->
-
 		</div>
+	
+		<!-- body -->
+		<div class="container-fluid" id="main-container">
+			<div class="aboutus-container">
+				<h1>درباره پاوربرگر</h1>
+				<p>شما با فشردن دکمه پاور در واقع پیام اتصال دستگاه را به منبع انرژی ارسال می کنید همانطور که در پاور برگر با اولین گاز زدن
+					گویا خود را به منبع انرژی متصل کرده اید.... </p>
+				<p>
+					گوشت تازه گریل شده امیخته با یک سس خوش طعم از مخلوط ادویه های معطر و سبزیجات تازه که با بهترین دستور العمل ها و تکنیک های
+					فراوری محصول تهیه شده است.
+				</p>
+				<p>
+					با وعده های سالم و پر انرژی پاور روز خود را بسازید.
+				</p>
+				<p>
+					پاور به شما تجربه ی ابمیوه های طبیعی و تازه و همچنین انواع سالاد را ( سالاد میوه ، سالاد های فصل و...) پیشنهاد می کند.
+				</p>
+				<p>
+					همچنین پذیرای شما برای یک وعده کامل صبحانه که نوید شادابی در کل روز است هستیم.
+				</p>
+				<p>
+					می توانید بعد از یک روز کاری طولانی در محیط دلپذیر و صمیمی پاور با یک فنجان قهوه خستگی خود را در کنید.
+				</p>
+				<p>منتظرتان هستیم.</p>
+			</div>
+		</div>
+	
+		<!-- footer -->
+		<footer>
+			<ul id="social-icons">
+				<li>
+					<a href="http://instagram.com">
+						<img src="images/insta.png" alt="instagram" height="40px" width="40px">
+					</a>
+				</li>
+				<li>
+					<a href="http://instagram.com">
+						<img src="images/insta.png" alt="instagram" height="40px" width="40px">
+					</a>
+				</li>
+			</ul>
+			<p>
+				<span>آدرس: </span>
+				خيابان شريعتي دوراهي قلهك خيابان بصيري پلاك 47
+			</p>
+			<p>
+				<span>تلفن: </span> ۰۲۱-٧٥٢٣٢</p>
+		</footer>
+	
 	</div>
-
-	<!-- body -->
-	<div class="container" id="main-container">
-		درباره ما
-	</div>
-
-	<!-- footer -->
-	<footer>
-		vahid
-	</footer>
-
 
 
 

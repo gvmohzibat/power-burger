@@ -457,7 +457,8 @@
 				left: cssStyle.width * 56.5 / 100 + "px",
 			});
 			$('#main-container').css({
-				minHeight: $(window).outerHeight() - cssStyle.height - $('#navbar').outerHeight() - $('footer').outerHeight()
+				minHeight: $(window).outerHeight() - cssStyle.height - $('#navbar').outerHeight() - $('footer').outerHeight(),
+				minHeight: cssStyle.width / 2480 * 1001
 			});
 		},
 		_loadEvents : function() {
