@@ -247,7 +247,9 @@ body {
     font-size: 21px;
     text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000; }
     #main-container .aboutus-container h1 {
-      margin: 40px 0; }
+      margin: 40px 0 30px;
+      font-size: 50px;
+      margin-right: -70px; }
   #main-container * {
     color: #fff; }
 
@@ -279,6 +281,8 @@ footer {
     background-position-x: 90%; }
     #main-container .aboutus-container {
       margin-right: 5%;
-      margin-left: 5%; } }
+      margin-left: 5%; }
+      #main-container .aboutus-container h1 {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
