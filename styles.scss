@@ -1,4 +1,5 @@
 $yellow: #e5e607;
+$nav-footer-bg: #252514;
 html,
 body {
   height: 100%;
@@ -21,7 +22,7 @@ body {
   right: 0;
   z-index: 999;
   min-height: 70px;
-  background: #222;
+  background: $nav-footer-bg;
   border-bottom: 2px solid $yellow;
   color: $yellow;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
@@ -138,19 +139,19 @@ body {
 }
 .animate-image-delay4 {
   animation-name: animateImageSliderdelay4;
-  animation-duration: 4s;
+  animation-duration: 3.8s;
 }
 .animate-image-delay5 {
   animation-name: animateImageSliderdelay5;
-  animation-duration: 4.5s;
+  animation-duration: 4s;
 }
 .animate-image-delay6 {
   animation-name: animateImageSliderdelay6;
-  animation-duration: 5s;
+  animation-duration: 4.3s;
 }
 .animate-image-delay7 {
   animation-name: animateImageSliderdelay7;
-  animation-duration: 5.5s;
+  animation-duration: 4.6s;
 }
 
 @keyframes animateImageSlider {
@@ -313,7 +314,7 @@ body {
 }
 footer {
 	width: 100%;
-  background: #333;
+  background: $nav-footer-bg;
   min-height: 60px;
 	color: #fff;
 	padding: 30px 10% 20px;
