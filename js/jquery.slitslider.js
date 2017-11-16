@@ -456,8 +456,13 @@
 				bottom: cssStyle.height * 33.4 / 100 + "px",
 				left: cssStyle.width * 56.5 / 100 + "px",
 			});
+			$('#resturant-menu').css({
+				minHeight: cssStyle.width / 2480 * 1353
+			});
+			$('#cafe-menu').css({
+				minHeight: cssStyle.width / 2480 * 1090
+			});
 			$('#main-container').css({
-				minHeight: $(window).outerHeight() - cssStyle.height - $('#navbar').outerHeight() - $('footer').outerHeight(),
 				minHeight: cssStyle.width / 2480 * 1001
 			});
 		},

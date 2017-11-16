@@ -3,17 +3,17 @@ $nav-footer-bg: #252514;
 html,
 body {
   height: 100%;
-	overflow-x: hidden;
-	direction: ltr;
+  overflow-x: hidden;
+  direction: ltr;
 }
 body {
   position: relative;
   padding-top: 70px;
-	text-align: right;
-	font-family: BHoma,'BHoma',tahoma;
+  text-align: right;
+  font-family: BHoma, 'BHoma', tahoma;
 }
 #main {
-	direction: rtl;
+  direction: rtl;
 }
 #navbar {
   position: fixed;
@@ -105,8 +105,8 @@ body {
   line-height: 40px;
   padding: 0;
   height: 40px;
-	position: relative;
-	font-family: sans-serif;
+  position: relative;
+  font-family: sans-serif;
   #logo-power {
     background: url(images/logo.png);
     height: 40px;
@@ -286,14 +286,16 @@ body {
     box-shadow: 0 3px 5px 12px #232322, 0 4px 200px 10px rgba(252, 254, 1, 0);
   }
 }
-
-#main-container {
-  background-image: url(images/aboutusbg.jpg);
+.section-back {
   background-size: cover;
   background-position-x: right;
   background-position-y: top;
   border-top: 4px solid #fff;
-	color: #fff;
+  position: relative;
+}
+#main-container {
+  background-image: url(images/aboutusbg.jpg);
+  color: #fff;
   .aboutus-container {
     margin-right: 40%;
     margin-left: 17%;
@@ -301,55 +303,126 @@ body {
     padding: 15px;
     text-align: justify;
     font-size: 21px;
+    font-family: 'Dast Nevis', tahoma, sans-serif;
     text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000;
     h1 {
-			margin: 40px 0 30px;
-			font-size: 50px;
-			margin-right: -70px;
+      margin: 40px 0 30px;
+      font-size: 50px;
+      margin-right: -70px;
     }
   }
   * {
     color: #fff;
   }
 }
+.menu-r {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 180%;
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
+}
+
+#resturant-menu {
+  background-image: url(images/res-menu.jpg);
+  .menu-r {
+    right: 10%;
+    top: 10%;
+    left: 34%;
+    bottom: 5%;
+  }
+}
+#cafe-menu {
+  background-image: url(images/cafe-menu.jpg);
+  .menu-r {
+    right: 42%;
+    top: 6%;
+    left: 19%;
+    bottom: 6%;
+  }
+}
 footer {
-	width: 100%;
+  width: 100%;
   background: $nav-footer-bg;
   min-height: 60px;
-	color: #fff;
-	padding: 30px 10% 20px;
-	border-top: 2px solid $yellow;
-	p {
-		margin-bottom: 5px;
-		span {
-			font-weight: bold;
-		}
-	}
-	
-	#social-icons {
-		list-style: none;
-		list-style-type: none;
-		height: 55px;
-		margin: 0;
-		padding: 0;
-		float: left;
-		li {
-			display: inline-block;
-			height: 55px;
-			margin-right: 7px;
-		}
-	}
+  color: #fff;
+  padding: 30px 10% 20px;
+  border-top: 2px solid $yellow;
+  p {
+    margin-bottom: 5px;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  #social-icons {
+    list-style: none;
+    list-style-type: none;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    li {
+      display: inline-block;
+      height: 55px;
+      margin-right: 7px;
+    }
+  }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
   #main-container {
-    background-position-x: 90%;
+    background-position-x: 65%;
+  }
+  #main-container .aboutus-container {
+    /*       margin-right: 5%; */
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #main-container {
+    background-position-x: 80%;
+  }
+  #main-container .aboutus-container {
+    margin-right: 45%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main-container {
+    background-position-x: 10%;
+  }
+  #main-container .aboutus-container {
+    margin-right: 30%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #main-container {
+    background-position-x: 10%;
+  }
+  #main-container .aboutus-container {
+    margin-right: 20%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #main-container {
+    background-position-x: 0;
     .aboutus-container {
       margin-right: 5%;
       margin-left: 5%;
-			// text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
-			h1 {
-				margin-right: 0;
-			}
+      // text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
+      h1 {
+        margin-right: 0;
+      }
     }
-	}
+  }
 }
