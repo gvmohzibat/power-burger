@@ -132,7 +132,7 @@
 		},
 		// gets the current container width & height
 		_getSize : function() {
-			var $awidth = this.$elWrapper.outerWidth( true );
+			var $awidth = this.$elWrapper.outerWidth( true ) + 15;
 			this.size = {
 				width : $awidth,
 				height : $awidth * 1001 / 2480

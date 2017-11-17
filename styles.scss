@@ -324,9 +324,42 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 180%;
+  direction: ltr;
+  padding-right: 25px;
+  &.mCustomScrollbar {
+    padding-right: 0;
+    > .mCustomScrollBox {
+      padding-right: 25px;
+    }
+  }
+  h3 {
+    font-size: 120%;
+    font-weight: bold;
+  }
+  ul {
+    // padding: 0;
+    margin: 0;
+  }
+  .menu-section {
+    margin-bottom: 30px;
+  }
   li {
     list-style: none;
     list-style-type: none;
+    direction: rtl;
+    .price {
+      float: left;
+      font-weight: bold;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 77%;
+      display: block;
+    }
   }
 }
 

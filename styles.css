@@ -265,10 +265,32 @@ body {
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: 180%; }
+  font-size: 180%;
+  direction: ltr;
+  padding-right: 25px; }
+  .menu-r.mCustomScrollbar {
+    padding-right: 0; }
+    .menu-r.mCustomScrollbar > .mCustomScrollBox {
+      padding-right: 25px; }
+  .menu-r h3 {
+    font-size: 120%;
+    font-weight: bold; }
+  .menu-r ul {
+    margin: 0; }
+  .menu-r .menu-section {
+    margin-bottom: 30px; }
   .menu-r li {
     list-style: none;
-    list-style-type: none; }
+    list-style-type: none;
+    direction: rtl; }
+    .menu-r li .price {
+      float: left;
+      font-weight: bold; }
+    .menu-r li .name {
+      font-weight: bold; }
+    .menu-r li .desc {
+      font-size: 77%;
+      display: block; }
 
 #resturant-menu {
   background-image: url(images/res-menu.jpg); }
