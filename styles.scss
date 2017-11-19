@@ -6,15 +6,18 @@ body {
   overflow-x: hidden;
   direction: ltr;
 }
+
 body {
   position: relative;
   padding-top: 70px;
   text-align: right;
   font-family: BHoma, 'BHoma', tahoma;
 }
+
 #main {
   direction: rtl;
 }
+
 #navbar {
   position: fixed;
   top: 0;
@@ -57,6 +60,7 @@ body {
     }
   }
 }
+
 #side-menu {
   position: fixed;
   right: 0;
@@ -98,6 +102,7 @@ body {
     }
   }
 }
+
 #logo {
   direction: ltr;
   margin-left: 20px;
@@ -122,6 +127,7 @@ body {
     border-radius: 100px;
   }
 }
+
 .animate-image {
   position: absolute;
   opacity: 1;
@@ -129,26 +135,32 @@ body {
   animation-name: animateImageSlider;
   animation-duration: 2s;
 }
+
 .animate-image-delay2 {
   animation-name: animateImageSliderdelay2;
   animation-duration: 3s;
 }
+
 .animate-image-delay3 {
   animation-name: animateImageSliderdelay3;
   animation-duration: 3.2s;
 }
+
 .animate-image-delay4 {
   animation-name: animateImageSliderdelay4;
   animation-duration: 3.8s;
 }
+
 .animate-image-delay5 {
   animation-name: animateImageSliderdelay5;
   animation-duration: 4s;
 }
+
 .animate-image-delay6 {
   animation-name: animateImageSliderdelay6;
   animation-duration: 4.3s;
 }
+
 .animate-image-delay7 {
   animation-name: animateImageSliderdelay7;
   animation-duration: 4.6s;
@@ -168,6 +180,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay2 {
   0% {
     opacity: 0;
@@ -182,6 +195,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay3 {
   0% {
     opacity: 0;
@@ -196,6 +210,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay4 {
   0% {
     opacity: 0;
@@ -210,6 +225,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay5 {
   0% {
     opacity: 0;
@@ -224,6 +240,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay6 {
   0% {
     opacity: 0;
@@ -238,6 +255,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateImageSliderdelay7 {
   0% {
     opacity: 0;
@@ -252,6 +270,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes animateLogo {
   0% {
     transform: scale(1);
@@ -274,6 +293,7 @@ body {
     background-image: url(images/logo.png);
   }
 }
+
 @keyframes animateLogoShadow {
   0%,
   30% {
@@ -286,6 +306,7 @@ body {
     box-shadow: 0 3px 5px 12px #232322, 0 4px 200px 10px rgba(252, 254, 1, 0);
   }
 }
+
 .section-back {
   background-size: cover;
   background-position-x: right;
@@ -293,6 +314,7 @@ body {
   border-top: 4px solid #fff;
   position: relative;
 }
+
 #main-container {
   background-image: url(images/aboutusbg.jpg);
   color: #fff;
@@ -304,7 +326,7 @@ body {
     text-align: justify;
     font-size: 21px;
     font-family: 'Dast Nevis', tahoma, sans-serif;
-    text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000;
+    // text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000;
     h1 {
       margin: 40px 0 30px;
       font-size: 50px;
@@ -315,6 +337,7 @@ body {
     color: #fff;
   }
 }
+
 .menu-r {
   position: absolute;
   margin: 0;
@@ -326,6 +349,9 @@ body {
   font-size: 180%;
   direction: ltr;
   padding-right: 25px;
+  .mCSB_container {
+    padding-right: 5px;
+  }
   &.mCustomScrollbar {
     padding-right: 0;
     > .mCustomScrollBox {
@@ -351,16 +377,16 @@ body {
       float: left;
       font-weight: bold;
     }
-
     .name {
-      font-weight: bold;
     }
-
     .desc {
-      font-size: 77%;
+      font-size: 75%;
       display: block;
     }
   }
+}
+.bold {
+  font-weight: bold;
 }
 
 #resturant-menu {
@@ -372,8 +398,12 @@ body {
     bottom: 5%;
   }
 }
+
 #cafe-menu {
   background-image: url(images/cafe-menu.jpg);
+  * {
+    color: #fff;
+  }
   .menu-r {
     right: 42%;
     top: 6%;
@@ -381,6 +411,7 @@ body {
     bottom: 6%;
   }
 }
+
 footer {
   width: 100%;
   background: $nav-footer-bg;
@@ -394,7 +425,6 @@ footer {
       font-weight: bold;
     }
   }
-
   #social-icons {
     list-style: none;
     list-style-type: none;
@@ -409,6 +439,7 @@ footer {
     }
   }
 }
+
 @media screen and (max-width: 1500px) {
   #main-container {
     background-position-x: 65%;
@@ -418,6 +449,7 @@ footer {
     margin-left: 5%;
   }
 }
+
 @media screen and (max-width: 1300px) {
   #main-container {
     background-position-x: 80%;
@@ -427,6 +459,7 @@ footer {
     margin-left: 5%;
   }
 }
+
 @media screen and (max-width: 1200px) {
   #main-container {
     background-position-x: 10%;
@@ -435,7 +468,15 @@ footer {
     margin-right: 30%;
     margin-left: 5%;
   }
+  .menu-r {
+    font-size: 100%;
+  }
+  .menu-r,
+  .menu-r ul {
+    padding-right: 0;
+  }
 }
+
 @media screen and (max-width: 1100px) {
   #main-container {
     background-position-x: 10%;
@@ -451,11 +492,32 @@ footer {
     background-position-x: 0;
     .aboutus-container {
       margin-right: 5%;
-      margin-left: 5%;
-      // text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
+      margin-left: 5%; // text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
       h1 {
         margin-right: 0;
       }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  #resturant-menu {
+    background-size: 140%;
+    background-position-x: 95%;
+    .menu-r {
+      right: 10%;
+      top: 10%;
+      left: 10%;
+      bottom: 5%;
+    }
+  }
+  #cafe-menu {
+    background-size: 160%;
+    background-position-x: 21%;
+    .menu-r {
+      right: 10%;
+      top: 6%;
+      left: 10%;
+      bottom: 6%;
     }
   }
 }
