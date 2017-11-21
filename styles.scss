@@ -61,48 +61,6 @@ body {
 	}
 }
 
-#side-menu {
-	position: fixed;
-	right: 0;
-	top: 130px;
-	z-index: 999;
-	transition: all 0.4s;
-	ul {
-		padding: 0;
-		margin: 0;
-		li {
-			background: #ddd;
-			border-radius: 100px 0 0 100px;
-			padding: 5px 8px 5px 15px;
-			margin-bottom: 7px;
-			white-space: nowrap;
-			display: block;
-			position: relative;
-			right: -40px;
-			line-height: 30px;
-			transition: all 0.4s;
-			box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 0, 0, 0.2);
-			transition: all 0.3s ease-out;
-			cursor: pointer;
-			img,
-			span {
-				display: inline-block;
-			}
-			img {
-				float: left;
-				margin-right: 10px;
-				width: 30px;
-				height: 30px;
-			}
-			&:hover {
-				right: 0;
-				background: #fff;
-				border-right: none;
-			}
-		}
-	}
-}
-
 #logo {
 	direction: ltr;
 	margin-left: 20px;
@@ -521,21 +479,6 @@ footer {
 		}
 	}
 }
-@keyframes fadeInRight {
-	0% {
-		opacity: 0;
-		transform: translate3d(20%, 0, 0);
-	}
-	to {
-		opacity: 1;
-		transform: none;
-	}
-}
-#animateit {
-	display:none;
-}
-.fadeInRight {
-	display: block !important;
-	animation-name: fadeInRight;
-	animation-duration: 3s;
+#animateit p {
+	opacity: 0;
 }
