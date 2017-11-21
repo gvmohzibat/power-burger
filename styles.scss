@@ -2,522 +2,540 @@ $yellow: #e5e607;
 $nav-footer-bg: #252514;
 html,
 body {
-  height: 100%;
-  overflow-x: hidden;
-  direction: ltr;
+	height: 100%;
+	overflow-x: hidden;
+	direction: ltr;
 }
 
 body {
-  position: relative;
-  padding-top: 70px;
-  text-align: right;
-  font-family: BHoma, 'BHoma', tahoma;
+	position: relative;
+	padding-top: 70px;
+	text-align: right;
+	font-family: BHoma, 'BHoma', tahoma;
 }
 
 #main {
-  direction: rtl;
+	direction: rtl;
 }
 
 #navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  min-height: 70px;
-  background: $nav-footer-bg;
-  border-bottom: 2px solid $yellow;
-  color: $yellow;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-  .nav-link {
-    color: #fff;
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
-    padding-right: 38px;
-    margin-left: 13px;
-    &:hover {
-      color: $yellow;
-    }
-  }
-  #home-nav {
-    background-image: url(images/home.png);
-    &:hover {
-      background-image: url(images/homey.png);
-    }
-  }
-  #contact-nav {
-    background-image: url(images/contact.png);
-    &:hover {
-      background-image: url(images/contacty.png);
-    }
-  }
-  #about-nav {
-    background-image: url(images/about.png);
-    &:hover {
-      background-image: url(images/abouty.png);
-    }
-  }
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	min-height: 70px;
+	background: $nav-footer-bg;
+	border-bottom: 2px solid $yellow;
+	color: $yellow;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	.nav-link {
+		color: #fff;
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-position-y: center;
+		padding-right: 38px;
+		margin-left: 13px;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	#home-nav {
+		background-image: url(images/home.png);
+		&:hover {
+			background-image: url(images/homey.png);
+		}
+	}
+	#contact-nav {
+		background-image: url(images/contact.png);
+		&:hover {
+			background-image: url(images/contacty.png);
+		}
+	}
+	#about-nav {
+		background-image: url(images/about.png);
+		&:hover {
+			background-image: url(images/abouty.png);
+		}
+	}
 }
 
 #side-menu {
-  position: fixed;
-  right: 0;
-  top: 130px;
-  z-index: 999;
-  transition: all 0.4s;
-  ul {
-    padding: 0;
-    margin: 0;
-    li {
-      background: #ddd;
-      border-radius: 100px 0 0 100px;
-      padding: 5px 8px 5px 15px;
-      margin-bottom: 7px;
-      white-space: nowrap;
-      display: block;
-      position: relative;
-      right: -40px;
-      line-height: 30px;
-      transition: all 0.4s;
-      box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease-out;
-      cursor: pointer;
-      img,
-      span {
-        display: inline-block;
-      }
-      img {
-        float: left;
-        margin-right: 10px;
-        width: 30px;
-        height: 30px;
-      }
-      &:hover {
-        right: 0;
-        background: #fff;
-        border-right: none;
-      }
-    }
-  }
+	position: fixed;
+	right: 0;
+	top: 130px;
+	z-index: 999;
+	transition: all 0.4s;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			background: #ddd;
+			border-radius: 100px 0 0 100px;
+			padding: 5px 8px 5px 15px;
+			margin-bottom: 7px;
+			white-space: nowrap;
+			display: block;
+			position: relative;
+			right: -40px;
+			line-height: 30px;
+			transition: all 0.4s;
+			box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease-out;
+			cursor: pointer;
+			img,
+			span {
+				display: inline-block;
+			}
+			img {
+				float: left;
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+			}
+			&:hover {
+				right: 0;
+				background: #fff;
+				border-right: none;
+			}
+		}
+	}
 }
 
 #logo {
-  direction: ltr;
-  margin-left: 20px;
-  color: #fff;
-  line-height: 40px;
-  padding: 0;
-  height: 40px;
-  position: relative;
-  font-family: sans-serif;
-  #logo-power {
-    background: url(images/logo.png);
-    height: 40px;
-    width: 40px;
-    float: left;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: animateLogo, animateLogoShadow;
-    animation-duration: 4.5s, 4.5s;
-    animation-iteration-count: infinite;
-    background-position-x: center;
-    border-radius: 100px;
-  }
+	direction: ltr;
+	margin-left: 20px;
+	color: #fff;
+	line-height: 40px;
+	padding: 0;
+	height: 40px;
+	position: relative;
+	font-family: sans-serif;
+	#logo-power {
+		background: url(images/logo.png);
+		height: 40px;
+		width: 40px;
+		float: left;
+		margin-right: 10px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		animation-name: animateLogo, animateLogoShadow;
+		animation-duration: 4.5s, 4.5s;
+		animation-iteration-count: infinite;
+		background-position-x: center;
+		border-radius: 100px;
+	}
 }
 
 .animate-image {
-  position: absolute;
-  opacity: 1;
-  transform: scale(1);
-  animation-name: animateImageSlider;
-  animation-duration: 2s;
+	position: absolute;
+	opacity: 1;
+	transform: scale(1);
+	animation-name: animateImageSlider;
+	animation-duration: 2s;
 }
 
 .animate-image-delay2 {
-  animation-name: animateImageSliderdelay2;
-  animation-duration: 3s;
+	animation-name: animateImageSliderdelay2;
+	animation-duration: 3s;
 }
 
 .animate-image-delay3 {
-  animation-name: animateImageSliderdelay3;
-  animation-duration: 3.2s;
+	animation-name: animateImageSliderdelay3;
+	animation-duration: 3.2s;
 }
 
 .animate-image-delay4 {
-  animation-name: animateImageSliderdelay4;
-  animation-duration: 3.8s;
+	animation-name: animateImageSliderdelay4;
+	animation-duration: 3.8s;
 }
 
 .animate-image-delay5 {
-  animation-name: animateImageSliderdelay5;
-  animation-duration: 4s;
+	animation-name: animateImageSliderdelay5;
+	animation-duration: 4s;
 }
 
 .animate-image-delay6 {
-  animation-name: animateImageSliderdelay6;
-  animation-duration: 4.3s;
+	animation-name: animateImageSliderdelay6;
+	animation-duration: 4.3s;
 }
 
 .animate-image-delay7 {
-  animation-name: animateImageSliderdelay7;
-  animation-duration: 4.6s;
+	animation-name: animateImageSliderdelay7;
+	animation-duration: 4.6s;
 }
 
 @keyframes animateImageSlider {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  40% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	40% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay2 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  45% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	45% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay3 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	50% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay4 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  58% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	58% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay5 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  65% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	65% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay6 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  70% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	70% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateImageSliderdelay7 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  75% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	75% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 @keyframes animateLogo {
-  0% {
-    transform: scale(1);
-    background-image: url(images/logo.png);
-  }
-  20% {
-    transform: scale(0.7);
-    background-image: url(images/logo.png);
-  }
-  22% {
-    background-image: url(images/logo1.png);
-  }
-  30% {
-    transform: scale(1);
-    background-image: url(images/logo1.png);
-  }
-  55%,
-  100% {
-    transform: scale(1);
-    background-image: url(images/logo.png);
-  }
+	0% {
+		transform: scale(1);
+		background-image: url(images/logo.png);
+	}
+	20% {
+		transform: scale(0.7);
+		background-image: url(images/logo.png);
+	}
+	22% {
+		background-image: url(images/logo1.png);
+	}
+	30% {
+		transform: scale(1);
+		background-image: url(images/logo1.png);
+	}
+	55%,
+	100% {
+		transform: scale(1);
+		background-image: url(images/logo.png);
+	}
 }
 
 @keyframes animateLogoShadow {
-  0%,
-  30% {
-    box-shadow: 0 3px 5px 5px #232322, 0 4px 0px 0px rgba(252, 254, 1, 1);
-  }
-  50% {
-    box-shadow: 0 3px 15px 5px #232322, 0 4px 100px 0px #fcfe01;
-  }
-  60% {
-    box-shadow: 0 3px 5px 12px #232322, 0 4px 200px 10px rgba(252, 254, 1, 0);
-  }
+	0%,
+	30% {
+		box-shadow: 0 3px 5px 5px #232322, 0 4px 0px 0px rgba(252, 254, 1, 1);
+	}
+	50% {
+		box-shadow: 0 3px 15px 5px #232322, 0 4px 100px 0px #fcfe01;
+	}
+	60% {
+		box-shadow: 0 3px 5px 12px #232322, 0 4px 200px 10px rgba(252, 254, 1, 0);
+	}
 }
 
 .section-back {
-  background-size: cover;
-  background-position-x: right;
-  background-position-y: top;
-  border-top: 4px solid #fff;
-  position: relative;
+	background-size: cover;
+	background-position-x: right;
+	background-position-y: top;
+	border-top: 4px solid #fff;
+	position: relative;
 }
 
 #main-container {
-  background-image: url(images/aboutusbg.jpg);
-  color: #fff;
-  .aboutus-container {
-    margin-right: 40%;
-    margin-left: 17%;
-    height: 100%;
-    padding: 15px;
-    text-align: justify;
-    font-size: 21px;
-    font-family: 'Dast Nevis', tahoma, sans-serif;
-    // text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000;
-    h1 {
-      margin: 40px 0 30px;
-      font-size: 50px;
-      margin-right: -70px;
-    }
-  }
-  * {
-    color: #fff;
-  }
+	background-image: url(images/aboutusbg.jpg);
+	color: #fff;
+	.aboutus-container {
+		margin-right: 40%;
+		margin-left: 17%;
+		height: 100%;
+		padding: 15px;
+		text-align: justify;
+		font-size: 21px;
+		font-family: 'Dast Nevis', tahoma, sans-serif;
+		// text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 100px #000;
+		h1 {
+			margin: 40px 0 30px;
+			font-size: 50px;
+			margin-right: -70px;
+		}
+	}
+	* {
+		color: #fff;
+	}
 }
 
 .menu-r {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  list-style-type: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-  font-size: 180%;
-  direction: ltr;
-  padding-right: 25px;
-  .mCSB_container {
-    padding-right: 5px;
-  }
-  &.mCustomScrollbar {
-    padding-right: 0;
-    > .mCustomScrollBox {
-      padding-right: 25px;
-    }
-  }
-  h3 {
-    font-size: 120%;
-    font-weight: bold;
-  }
-  ul {
-    // padding: 0;
-    margin: 0;
-  }
-  .menu-section {
-    margin-bottom: 30px;
-  }
-  li {
-    list-style: none;
-    list-style-type: none;
-    direction: rtl;
-    .price {
-      float: left;
-      font-weight: bold;
-    }
-    .name {
-    }
-    .desc {
-      font-size: 75%;
-      display: block;
-    }
-  }
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 180%;
+	direction: ltr;
+	padding-right: 25px;
+	.mCSB_container {
+		padding-right: 5px;
+	}
+	&.mCustomScrollbar {
+		padding-right: 0;
+		> .mCustomScrollBox {
+			padding-right: 25px;
+		}
+	}
+	h3 {
+		font-size: 120%;
+		font-weight: bold;
+	}
+	ul {
+		// padding: 0;
+		margin: 0;
+	}
+	.menu-section {
+		margin-bottom: 30px;
+	}
+	li {
+		list-style: none;
+		list-style-type: none;
+		direction: rtl;
+		.price {
+			float: left;
+			font-weight: bold;
+		}
+		.name {
+		}
+		.desc {
+			font-size: 75%;
+			display: block;
+		}
+	}
 }
 .bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 #resturant-menu {
-  background-image: url(images/res-menu.jpg);
-  .menu-r {
-    right: 10%;
-    top: 10%;
-    left: 34%;
-    bottom: 5%;
-  }
+	background-image: url(images/res-menu.jpg);
+	.menu-r {
+		right: 10%;
+		top: 10%;
+		left: 34%;
+		bottom: 5%;
+	}
 }
 
 #cafe-menu {
-  background-image: url(images/cafe-menu.jpg);
-  * {
-    color: #fff;
-  }
-  .menu-r {
-    right: 42%;
-    top: 6%;
-    left: 19%;
-    bottom: 6%;
-  }
+	background-image: url(images/cafe-menu.jpg);
+	* {
+		color: #fff;
+	}
+	.menu-r {
+		right: 42%;
+		top: 6%;
+		left: 19%;
+		bottom: 6%;
+	}
 }
 
 footer {
-  width: 100%;
-  background: $nav-footer-bg;
-  min-height: 60px;
-  color: #fff;
-  padding: 30px 10% 20px;
-  border-top: 2px solid $yellow;
-  p {
-    margin-bottom: 5px;
-    span {
-      font-weight: bold;
-    }
-  }
-  #social-icons {
-    list-style: none;
-    list-style-type: none;
-    height: 55px;
-    margin: 0;
-    padding: 0;
-    float: left;
-    li {
-      display: inline-block;
-      height: 55px;
-      margin-right: 7px;
-    }
-  }
+	width: 100%;
+	background: $nav-footer-bg;
+	min-height: 60px;
+	color: #fff;
+	padding: 30px 10% 20px;
+	border-top: 2px solid $yellow;
+	p {
+		margin-bottom: 5px;
+		span {
+			font-weight: bold;
+		}
+	}
+	#social-icons {
+		list-style: none;
+		list-style-type: none;
+		height: 55px;
+		margin: 0;
+		padding: 0;
+		float: left;
+		li {
+			display: inline-block;
+			height: 55px;
+			margin-right: 7px;
+		}
+	}
 }
 
 @media screen and (max-width: 1500px) {
-  #main-container {
-    background-position-x: 65%;
-  }
-  #main-container .aboutus-container {
-    /*       margin-right: 5%; */
-    margin-left: 5%;
-  }
+	#main-container {
+		background-position-x: 65%;
+	}
+	#main-container .aboutus-container {
+		/*       margin-right: 5%; */
+		margin-left: 5%;
+	}
 }
 
 @media screen and (max-width: 1300px) {
-  #main-container {
-    background-position-x: 80%;
-  }
-  #main-container .aboutus-container {
-    margin-right: 45%;
-    margin-left: 5%;
-  }
+	#main-container {
+		background-position-x: 80%;
+	}
+	#main-container .aboutus-container {
+		margin-right: 45%;
+		margin-left: 5%;
+	}
 }
 
 @media screen and (max-width: 1200px) {
-  #main-container {
-    background-position-x: 10%;
-  }
-  #main-container .aboutus-container {
-    margin-right: 30%;
-    margin-left: 5%;
-  }
-  .menu-r {
-    font-size: 100%;
-  }
-  .menu-r,
-  .menu-r ul {
-    padding-right: 0;
-  }
+	#main-container {
+		background-position-x: 10%;
+	}
+	#main-container .aboutus-container {
+		margin-right: 30%;
+		margin-left: 5%;
+	}
+	.menu-r {
+		font-size: 100%;
+	}
+	.menu-r,
+	.menu-r ul {
+		padding-right: 0;
+	}
 }
 
 @media screen and (max-width: 1100px) {
-  #main-container {
-    background-position-x: 10%;
-  }
-  #main-container .aboutus-container {
-    margin-right: 20%;
-    margin-left: 5%;
-  }
+	#main-container {
+		background-position-x: 10%;
+	}
+	#main-container .aboutus-container {
+		margin-right: 20%;
+		margin-left: 5%;
+	}
 }
 
 @media screen and (max-width: 1000px) {
-  #main-container {
-    background-position-x: 0;
-    .aboutus-container {
-      margin-right: 5%;
-      margin-left: 5%; // text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
-      h1 {
-        margin-right: 0;
-      }
-    }
-  }
+	#main-container {
+		background-position-x: 0;
+		.aboutus-container {
+			margin-right: 5%;
+			margin-left: 5%; // text-shadow: 0 0 30px #000, 0 0 60px #000, 0 0 60px #000, 0 0 60px #000, 0 0 80px #000, 0 0 80px #000, 0 0 80px #000, 0 0 100px #000;
+			h1 {
+				margin-right: 0;
+			}
+		}
+	}
 }
 @media screen and (max-width: 640px) {
-  #resturant-menu {
-    background-size: 140%;
-    background-position-x: 95%;
-    .menu-r {
-      right: 10%;
-      top: 10%;
-      left: 10%;
-      bottom: 5%;
-    }
-  }
-  #cafe-menu {
-    background-size: 160%;
-    background-position-x: 21%;
-    .menu-r {
-      right: 10%;
-      top: 6%;
-      left: 10%;
-      bottom: 6%;
-    }
-  }
+	#resturant-menu {
+		background-size: 140%;
+		background-position-x: 95%;
+		.menu-r {
+			right: 10%;
+			top: 10%;
+			left: 10%;
+			bottom: 5%;
+		}
+	}
+	#cafe-menu {
+		background-size: 160%;
+		background-position-x: 21%;
+		.menu-r {
+			right: 10%;
+			top: 6%;
+			left: 10%;
+			bottom: 6%;
+		}
+	}
+}
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translate3d(20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+#animateit {
+	display:none;
+}
+.fadeInRight {
+	display: block !important;
+	animation-name: fadeInRight;
+	animation-duration: 3s;
 }

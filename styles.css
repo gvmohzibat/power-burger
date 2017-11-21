@@ -220,12 +220,12 @@ body {
     transform: scale(1);
     background-image: url(images/logo1.png); }
   55%,
-  100% {
+	100% {
     transform: scale(1);
     background-image: url(images/logo.png); } }
 @keyframes animateLogoShadow {
   0%,
-  30% {
+	30% {
     box-shadow: 0 3px 5px 5px #232322, 0 4px 0px 0px #fcfe01; }
   50% {
     box-shadow: 0 3px 15px 5px #232322, 0 4px 100px 0px #fcfe01; }
@@ -396,5 +396,19 @@ footer {
       top: 6%;
       left: 10%;
       bottom: 6%; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+#animateit {
+  display: none; }
+
+.fadeInRight {
+  display: block !important;
+  animation-name: fadeInRight;
+  animation-duration: 3s; }
 
 /*# sourceMappingURL=styles.css.map */

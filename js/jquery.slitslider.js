@@ -539,6 +539,13 @@
 
 			}
 
+			var self = this;
+			var start = setTimeout(function() {
+				self.isPlaying = true;
+				self.options.autoplay = true;
+				self._startSlideshow();
+			}, 500);
+
 		},
 		_destroy : function( callback ) {
 			
