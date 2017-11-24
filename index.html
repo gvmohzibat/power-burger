@@ -103,11 +103,27 @@
 								<div class="bg-img bg-img-2"></div>
 							</div>
 						</div>
+						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="3" data-slice1-scale="2"
+						    data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-5"></div>
+								<div id="address-grd-bellow">
+									<p style="margin-bottom: 4px">
+										<span>آدرس: </span>
+										خيابان شريعتي دوراهي قلهك خيابان بصيري پلاك 47</p>
+									<p>
+										<span>تلفن: </span>
+										<span style="direction: ltr;display: inline-block;">۰۲۱-٧٥٢٣٢</span>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- /sl-slider -->
 
 					<nav id="nav-dots" class="nav-dots">
 						<span class="nav-dot-current"></span>
+						<span></span>
 						<span></span>
 						<span></span>
 						<span></span>
@@ -122,6 +138,36 @@
 		<!-- body -->
 		<div id="resturant-menu" class="section-back">
 			<div id="scrollbar-list-rest" class="menu-r default-skin">
+				<div class="menu-section">
+					<h3>پیتزاها</h3>
+					<ul>
+						<li>
+							<span class="name bold">پیتزا پاور</span>
+							<span class="price">24</span>
+							<span class="desc">ژامبون مرغ و گوشت، قارچ، فلفل دلمه، زیتون، پنیر، سس مخصوص</span>
+						</li>
+						<li>
+							<span class="name bold">پیتزا استیک</span>
+							<span class="price">26</span>
+							<span class="desc">راسته گوساله، فلفل دلمه، زیتون، پنیر، سس سیر</span>
+						</li>
+						<li>
+							<span class="name bold">پیتزا پپرونی</span>
+							<span class="price">20</span>
+							<span class="desc">پپرونی، فلفل دلمه، فلفل هالوپینو، پنیر، سس مخصوص</span>
+						</li>
+						<li>
+							<span class="name bold">پیتزا چیکن</span>
+							<span class="price">22</span>
+							<span class="desc">فیله مرغ گریل، فلفل دلمه، پیاز، پنیر، سس مخصوص</span>
+						</li>
+						<li>
+							<span class="name bold">پیتزا سبزیجات</span>
+							<span class="price">18</span>
+							<span class="desc">گوجه فرنگی، فلفل دلمه، قارچ، پیاز، ذرت، پنیر، سس مخصوص</span>
+						</li>
+					</ul>
+				</div>
 				<div class="menu-section">
 					<h3>برگرها</h3>
 					<ul>
@@ -588,10 +634,12 @@
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.min.js"></script>
-	<script>$.event.special.mousewheel || document.write('<script src="../js/minified/jquery.mousewheel.min.js"><\/script>')</script>
-	
+	<script>
+		$.event.special.mousewheel || document.write('<script src="../js/minified/jquery.mousewheel.min.js"><\/script>')
+	</script>
+
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	
+
 	<script>
 		$(document).ready(function () {
 			$("#scrollbar-list-rest").mCustomScrollbar({
