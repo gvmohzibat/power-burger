@@ -37,6 +37,7 @@ body {
 		background-position-y: center;
 		padding-right: 38px;
 		margin-left: 13px;
+		cursor: pointer;
 		&:hover {
 			color: $yellow;
 		}
@@ -70,6 +71,7 @@ body {
 	height: 40px;
 	position: relative;
 	font-family: sans-serif;
+	cursor: pointer;
 	#logo-power {
 		background: url(images/logo.png);
 		height: 40px;

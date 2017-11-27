@@ -27,9 +27,9 @@
 	<div id="main">
 		<!-- navbar -->
 		<nav id="navbar" class="navbar navbar-dark navbar-expand-lg" style="direction: ltr;">
-			<a id="logo" class="navbar-brand" onclick="$('body').mCustomScrollbar('scrollTo', 'top');" href="#main">
+			<span id="logo" class="navbar-brand" onclick="$('body').mCustomScrollbar('scrollTo', 'top');">
 				<div id="logo-power"></div> Power burger
-			</a>
+			</span>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 			    aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -38,19 +38,19 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction: rtl;">
 				<ul class="nav navbar-nav justify-content-end">
 					<li class="nav-item">
-						<a id="home-nav" class="nav-link active" onclick="$('body').mCustomScrollbar('scrollTo', 'top');" href="#main">
+						<span id="home-nav" class="nav-link active" onclick="$('body').mCustomScrollbar('scrollTo', 'top');">
 							صفحه اصلی
-						</a>
+						</span>
 					</li>
 					<li class="nav-item">
-						<a id="contact-nav" class="nav-link" href="#footer" onclick="$('body').mCustomScrollbar('scrollTo', 'bottom');">
+						<span id="contact-nav" class="nav-link" onclick="$('body').mCustomScrollbar('scrollTo', 'bottom');">
 							تماس با ما
-						</a>
+						</span>
 					</li>
 					<li class="nav-item">
-						<a id="about-nav" class="nav-link" href="#main-container" onclick="$('body').mCustomScrollbar('scrollTo', $('#main-container'));">
+						<span id="about-nav" class="nav-link" onclick="$('body').mCustomScrollbar('scrollTo', $('#main-container'));">
 							درباره ما
-						</a>
+						</span>
 					</li>
 				</ul>
 			</div>
@@ -111,9 +111,9 @@
 									<p style="margin-bottom: 4px">
 										<span>آدرس: </span>
 										خيابان شريعتي دوراهي قلهك خيابان بصيري پلاك 47</p>
-									<p>
+									<p style="direction: rtl;">
 										<span>تلفن: </span>
-										<span style="direction: ltr;display: inline-block;">۰۲۱-٧٥٢٣٢</span>
+										<span style="direction: ltr; display: inline-block;">۰۲۱-٧٥٢٣٢</span>
 									</p>
 								</div>
 							</div>
@@ -644,24 +644,20 @@
 		$(document).ready(function () {
 			$("#scrollbar-list-rest").mCustomScrollbar({
 				theme: "dark",
-				scrollButtons: {
-					boolean: false
-				},
+				scrollButtons: { boolean: false },
+				keyboard:{ enable: false },
 				scrollInertia: 200
 			});
 			$("#scrollbar-list-cafe").mCustomScrollbar({
 				theme: "light",
-				scrollButtons: {
-					boolean: false
-				},
+				scrollButtons: { boolean: false },
+				keyboard:{ enable: false },
 				scrollInertia: 200
 			});
 			$("body").mCustomScrollbar({
 				theme: "light",
-				scrollButtons: {
-					boolean: false
-				},
-				scrollInertia: 800,
+				scrollButtons: { boolean: false },
+				scrollInertia: 400,
 				callbacks: {
 					onTotalScrollOffset: $("#main-container").outerHeight(),
 					onTotalScroll: function () {

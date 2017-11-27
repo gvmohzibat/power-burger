@@ -31,7 +31,8 @@ body {
     background-position-x: right;
     background-position-y: center;
     padding-right: 38px;
-    margin-left: 13px; }
+    margin-left: 13px;
+    cursor: pointer; }
     #navbar .nav-link:hover {
       color: #e5e607; }
   #navbar #home-nav {
@@ -55,7 +56,8 @@ body {
   padding: 0;
   height: 40px;
   position: relative;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  cursor: pointer; }
   #logo #logo-power {
     background: url(images/logo.png);
     height: 40px;
